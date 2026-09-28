@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT course</title>
+</head>
+<body>
+    <video controls width="640">
+  <source src="OSINT_Course_Storyboard.mp4" type="video/mp4">
+  <track kind="captions" src="story.vtt" srclang="en" label="English" default>
+</video>
+ 
+</body>
+<div id="desc" aria-live="polite" class="sr-only"></div>
+<script>
+  const v = document.getElementById('sb');
+  const t = v.textTracks[0];
+  t.mode = 'hidden';
+  t.oncuechange = () => {
+    const c = t.activeCues[0];
+    document.getElementById('desc').textContent = c ? c.text : '';
+  };
+</script>
+</html>

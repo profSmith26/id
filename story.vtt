@@ -1,0 +1,72 @@
+WEBVTT
+Kind: descriptions
+Language: en
+
+NOTE
+Text description of the silent video "OSINT Foundations and Application:
+Instructional Storyboard." The video has no narration or sound. Each cue
+describes one slide and gives its on-screen text.
+
+1
+00:00:00.000 --> 00:00:05.016
+Title slide. Dark navy background with teal circles.
+Label: Instructional Storyboard.
+Title: OSINT Foundations and Application.
+A five-module course on open-source intelligence for cybersecurity, law enforcement, and investigative professionals.
+Five topic labels: Legal and Ethics, OSINT Framework, Deep and Dark Web, Social Media Intel, Reporting.
+Footer: Prepared using the ADDIE model, Development Phase Storyboard.
+
+2
+00:00:05.016 --> 00:00:10.032
+Slide 2 of 7. How to Read This Storyboard.
+Each of the five module slides uses the same four-part layout, mirroring the course's Development-phase design template.
+Four cards.
+C, On-Screen Content: the module topic and learning elements, including videos, readings, case studies, hands-on tool use, and the module exam.
+N, Navigation: what must be built and linked before the module goes live.
+M, Multimedia: direction for the video and graphics team.
+P, Production Notes: dependencies on Subject Matter Experts and special handling.
+
+3
+00:00:10.032 --> 00:00:15.048
+Slide 3 of 7. Module 1 of 5: Introduction to OSINT.
+Introduction to Open-Source Intelligence and the OSINT framework.
+Course learning includes: OSINT basics video; required reading; case study scenario; intro to the OSINT Framework at osintframework.com; module assessment exam.
+Navigation: produce the video, link the reading and the OSINT Framework site, build an SME-developed case study, and create an exam with multiple-choice and essay items.
+Multimedia: a human presenter with strong visuals explains OSINT, and a short story reinforces the concept.
+SME dependency: SMEs supply concrete examples for the case study, video, and course content.
+
+4
+00:00:15.048 --> 00:00:20.064
+Slide 4 of 7. Module 2 of 5: Legal, Ethical, and Compliance Issues.
+The legal, ethical, and compliance issues related to OSINT.
+Course learning includes: legal, ethical, and compliance videos; required reading; case study scenario; hands-on use of the OSINT Framework; module assessment exam.
+Navigation: produce videos, link the reading and the OSINT Framework site, build an SME-developed case study and the exam.
+Multimedia: graphics-heavy video with a legal and compliance story example.
+SME dependency: SMEs supply concrete examples.
+
+5
+00:00:20.064 --> 00:00:25.080
+Slide 5 of 7. Module 3 of 5: Protecting Privacy.
+Using encryption, virtual machines, and protecting privacy.
+Course learning includes: instructional videos; required reading; links to a free VPN, virtual machine, and required software; step-by-step install instructions; module assessment exam.
+Navigation: produce videos, place reading links, build an SME case study, create screenshot-based install instructions, and an exam with mixed questions and simulations.
+Multimedia: video demonstrates installing and correctly using the required OSINT software.
+SME dependency: SMEs supply concrete examples for the instructions, video, and course content.
+
+6
+00:00:25.080 --> 00:00:30.096
+Slide 6 of 7. Module 4 of 5: The Deep and Dark Web.
+Securely navigating the deep and dark web.
+Course learning includes: instructional video; required reading; case study scenario; reference links; step-by-step install instructions; module assessment exam.
+Navigation: produce the video, link the reading, build an SME case study and the exam.
+Multimedia: video reinforces safety and security with real examples, and a story element supports learning.
+SME dependency: SMEs supply concrete examples.
+
+7
+00:00:30.096 --> 00:00:35.110
+Slide 7 of 7. Module 5 of 5: Social Media Data.
+Searching and collecting social media data.
+Course learning includes: OSINT basics video; required reading; case study scenario; links to social media collection sites; module assessment exam.
+Navigation: produce the video, link the reading, build an SME case study and the exam.
+Multimedia: demonstrations, visuals, and graphics explain social media searching, and a story reinforces learning.
+SME dependency: SMEs supply concrete examples.
