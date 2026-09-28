@@ -13,11 +13,11 @@
 <body>
 
 <div class="mobile-nav">
-  
-  <a href="#invis">Invisible Design</a>
+
   <a href="#work">Experience</a>
   <a href="#skills">Skills</a>
   <a href="content/idpage.html" target="_blank">Sample course</a>
+   <a href="mod.htm" target="_blank">Sample modules</a>
     <a href="OSINT_Course_Storyboard.mp4" target="_blank">Sample storyboard</a>
   <a href="#contact">Contact</a>
 </div>
@@ -28,15 +28,15 @@
      
       <ul class="toc-links">
     
-        <li><a href="#invis">Invisible Design</a></li>
         <li><a href="#work">Experience</a></li>
         <li><a href="#skills">Skills &amp; tools</a></li>
          <li><a href="content/idpage.html" target="_blank">Sample course</a></li>
+         <li><a href="mod.htm" target="_blank">Sample modules</a></li>
          <li> <a href="OSINT_Course_Storyboard.mp4" target="_blank">Sample storyboard</a></li>
           <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="toc-foot">KJ Designs IT</div>
+    <div class="toc-foot">   <a href="https://www.linkedin.com/in/kristismith7/" target="_blank">LinkedIn</a> <br></div>
   </nav>
 
   <main>
@@ -45,22 +45,15 @@
         <h1>KJ Designs IT</h1><span class="tag">Kristi Smith, MBA, MS</span>
     
       <p class="lede">
-       Decades of experience designing courses and training programs in Information Technology, Cybersecurity and Computer Science.
-<br>Passionate about the learning process. 
+     Educator with decades of experience building courses and training programs — driven by a genuine passion for how people learn.
     
       <div class="hero-meta">
-        <div><strong>25+ yrs</strong>building and teaching courses</div>
+        <div><strong>25+ yrs</strong>designing, adapting and teaching courses</div>
         <div><strong>30+</strong>courses built in Blackboard or Canvas LMS</div>
-        <div><strong>Who better to design courses, than someone who has taught them?</strong></div>
       </div>
-    </section>
-
-    <section id="invis">
-      <h2>Invisible Design</h2>
-      <p class="quote">
-       “Good instructional design is invisible. The teacher isn't having to fix the course — they're focused on what they do best."<hr>
-       
-      </p>
+        <p class="quote">
+       “Good instructional design is invisible. The teacher isn't having to fix the course — they're focused on what they do best."
+    
     </section>
 
     <section id="work">
@@ -135,9 +128,6 @@
         </div>
 
 
-
-  
-
     <section id="skills">
       <h2>Skills &amp; tools</h2>
 
@@ -162,20 +152,82 @@
 
     <section id="contact">
       <h2>Please reach out!</h2>
- 
-      <div class="contact-box">
-       
-      </div>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/kristismith7/" target="_blank">LinkedIn</a>
   
-        <a href="#">Resume</a>
-      </div>
- 
-    </section>
+      <div class="contact-links">
+       
+  </div>
+       <form action="https://formsubmit.co/profkris23@gmail.com" method="POST" id="contactForm">
+    <!-- FormSubmit settings (optional but recommended) -->
+    <input type="hidden" name="_subject" value="New contact form submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thanks.htm">
 
-  </main>
-</div>
+    <table>
+        <tr>
+            <td><label for="fname">Firstname</label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Lastname</label></td>
+            <td><input type="text" id="lname" name="lname" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Telephone</label></td>
+            <td>
+                <input type="tel" id="phone" name="phone" required>
+                <p id="phoneError" style="color: red; margin: 4px 0 0;"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="url">Website URL</label></td>
+            <td><input type="url" id="url" name="url"></td>
+        </tr>
+        <tr>
+            <td><label for="text1">Message</label></td>
+            <td>
+                <textarea id="text1" name="text1" rows="4" cols="30">Send me a message!</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    const form = document.getElementById("contactForm");
+    const phoneInput = document.getElementById("phone");
+    const phoneError = document.getElementById("phoneError");
+
+    function isPhoneValid() {
+        const phonePattern = /^[0-9]{10,}$/;
+        return phonePattern.test(phoneInput.value.replace(/-/g, ""));
+    }
+
+    phoneInput.addEventListener("input", () => {
+        phoneError.textContent = isPhoneValid()
+            ? ""
+            : "Please enter a valid phone number with at least 10 digits.";
+    });
+
+    form.addEventListener("submit", (event) => {
+        if (!isPhoneValid()) {
+            event.preventDefault();
+            phoneError.textContent = "Please enter a valid phone number with at least 10 digits.";
+            phoneInput.focus();
+        }
+       
+    });
+</script>
+ 
 
 </body>
 </html>
