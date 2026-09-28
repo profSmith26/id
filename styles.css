@@ -48,7 +48,7 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-
+.center{text-align: center;}
   a { color: inherit; }
 
   .layout {
@@ -95,7 +95,7 @@
   .mobile-nav { display: none; }
 
   main { min-width: 0; }
-  section { padding: 96px 56px; border-bottom: 1px solid var(--line); }
+  section { padding: 60px 30px; border-bottom: 1px solid var(--line); }
   section:last-of-type { border-bottom: none; }
 
   h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
@@ -103,7 +103,10 @@
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 28px; }
   p { max-width: 62ch; }
   .lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 56ch; margin-top: 20px; }
-
+.transparent-img {
+  /* Sets the image to 50% opacity */
+  opacity: 0.5; 
+}
   .tag {
     display: inline-block;
     font-size: 0.8rem;
@@ -112,6 +115,7 @@
     border-radius: 3px;
     padding: 3px 9px;
     margin-bottom: 18px;
+    text-align: right;
   }
 
   /* ---- Hero ---- */
