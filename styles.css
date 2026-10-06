@@ -94,7 +94,7 @@
   /* mobile nav */
   .mobile-nav { display: none; }
 
-  main { min-width: 0; }
+  main { min-width: 0; padding: 25px; text-align: center;}
   section { padding: 60px 30px; border-bottom: 1px solid var(--line); }
   section:last-of-type { border-bottom: none; }
 
