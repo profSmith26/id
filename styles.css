@@ -95,14 +95,15 @@
   .mobile-nav { display: none; }
 
   main { min-width: 0; padding: 25px; text-align: center;}
-  section { padding: 60px 30px; border-bottom: 1px solid var(--line); }
+  section { padding: 60px 30px; border-bottom: 1px solid var(--line); text-align: center; }
   section:last-of-type { border-bottom: none; }
 
   h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
   h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.08; letter-spacing: -0.01em; }
   h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 28px; }
   p { max-width: 62ch; }
-  .lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 56ch; margin-top: 20px; }
+  .lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 56ch; 
+    margin-top: 20px; text-align: center; }
 .transparent-img {
   /* Sets the image to 50% opacity */
   opacity: 0.5; 
@@ -119,7 +120,7 @@
   }
 
   /* ---- Hero ---- */
-  #story { padding-top: 110px; }
+  #story { padding-top: 60px; }
   .hero-meta { margin-top: 40px; display: flex; gap: 32px; flex-wrap: wrap; color: var(--ink-soft); font-size: 0.9rem; }
   .hero-meta strong { color: var(--ink); display:block; font-family: var(--serif); font-size: 1.1rem; font-weight: 500; }
 
@@ -181,7 +182,7 @@
   }
 
   /* ---- Contact ---- */
-  #contact { padding-bottom: 80px; }
+  #contact { padding-bottom: 50px; }
   .contact-box { margin-top: 32px; display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
   .contact-box a.email {
     font-family: var(--serif); font-size: 1.6rem; text-decoration: none; border-bottom: 2px solid var(--gold);
@@ -205,3 +206,25 @@
     .principles { grid-template-columns: 1fr; }
     .work-item { grid-template-columns: 1fr; gap: 12px; }
   }
+  /* Center width-limited blocks */
+p,
+.lede,
+.quote {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flex rows ignore text-align, so center them with justify-content */
+.hero-meta,
+.pill-row,
+.contact-box,
+.contact-links,
+.work-stats {
+  justify-content: center;
+}
+
+/* Quote: the left border looks odd when centered */
+.quote {
+  border-left: none;
+  padding-left: 0;
+}
